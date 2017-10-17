@@ -1,16 +1,16 @@
-#Blurred Region Detection using Singular Value Decomposition (SVD)
+# Blurred Region Detection using Singular Value Decomposition (SVD)
 
-##Usage:
+## Usage:
 
-###get_blur_degree
+### get_blur_degree
 input: image_file, sv_num=10
 output: blur degree [0(clear)-1(blur)]
 
-###get_blur_map
+### get_blur_map
 input: image_file, win_size=10, sv_num=3
 output: blur map [0-1].
 
-###sample code
+### sample code
 
 ````
 import glob
@@ -23,7 +23,7 @@ for file in files:
      cv2.imwrite(out_file, (1-blur_map)*255)
 ````
 
-##Some Results:
+## Some Results:
 
 ![Test Image](data/test_image1.jpg "test_image")
 ![Blur Map](data/blur_map1.jpg "blur_map")
@@ -31,7 +31,7 @@ for file in files:
 ![Blur Map](data/blur_map4.jpg "blur_map")
 
 
-##Related paper:
+## Related paper:
 [Blurred Image Region Detection and Classification](http://fled.github.io/paper/blur.pdf)
 Bolan Su, Shijian Lu, Chew Lim Tan
 ACM Multimedia 2011
