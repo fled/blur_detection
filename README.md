@@ -1,9 +1,7 @@
 # Blurred Region Detection using Singular Value Decomposition (SVD)
 
 ## Requirements:
-Python
-OpenCV
-Numpy
+Python;OpenCV;Numpy
 
 ## Usage:
 
