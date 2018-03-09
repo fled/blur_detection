@@ -17,7 +17,7 @@ output: blur map [0-1].
 
 ````
 import glob
-
+from blur_detection import *
 files = glob.glob('data/test*')
 for file in files:
      print file, get_blur_degree(file)
